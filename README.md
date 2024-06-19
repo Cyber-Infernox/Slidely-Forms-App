@@ -22,21 +22,23 @@ This repository contains the code for the Slidely Project, which includes both t
 
 1. **Clone the repository:**
 
+   Open an empty folder where you want to clone the repository
+
    ```sh
    git clone https://github.com/Cyber-Infernox/Slidely-Forms-App.git
    cd Slidely-Forms-App
 
-2. **Navigate to the slidely-backend folder:**
+3. **Navigate to the slidely-backend folder:**
 
    ```sh
    cd slidely-backend
 
-3. **Install the npm packages:**
+4. **Install the npm packages:**
 
    ```sh
    npm install
 
-4. **Start the backend server:**
+5. **Start the backend server:**
 
    ```sh
    npm start
@@ -45,9 +47,10 @@ This repository contains the code for the Slidely Project, which includes both t
 
 1. **Open the solution file:**
 
-   Open Slidely Project Two.sln in Visual Studio.
+   Open "Slidely Project Two.sln" file in Visual Studio IDE.
 
 2. **Start the frontend application:**
 
-   Click on the Start or Run button in Visual Studio.
-   The frontend files are located in the SlidelyGoogleForm folder.
+   Click on the "Start" or "Run" button in Visual Studio.
+   
+   The frontend files are located in the "SlidelyGoogleForm" folder.
