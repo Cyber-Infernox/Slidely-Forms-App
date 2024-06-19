@@ -47,10 +47,10 @@ This repository contains the code for the Slidely Project, which includes both t
 
 1. **Open the solution file:**
 
-   Open "Slidely Project Two.sln" file in Visual Studio IDE.
+   Open the "Slidely Project Two.sln" file present in "Slidely-Forms-App" folder in the Visual Studio IDE.
 
 2. **Start the frontend application:**
 
-   Click on the "Start" or "Run" button in Visual Studio.
+   Click on the "Start" or "Run" button in Visual Studio IDE.
    
    The frontend files are located in the "SlidelyGoogleForm" folder.
