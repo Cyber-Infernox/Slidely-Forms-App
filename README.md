@@ -23,8 +23,8 @@ This repository contains the code for the Slidely Project, which includes both t
 1. **Clone the repository:**
 
    ```sh
-   git clone <repository-url>
-   cd <repository-folder>
+   git clone [<repository-url>](https://github.com/Cyber-Infernox/Slidely-Forms-App.git)
+   cd Slidely-Forms-App
 
 2. **Navigate to the slidely-backend folder:**
 
