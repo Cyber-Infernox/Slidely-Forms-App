@@ -27,12 +27,13 @@ Partial Class Form1
         Me.btnCreateSubmission = New System.Windows.Forms.Button()
         Me.Intro = New System.Windows.Forms.TextBox()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.btnSearchSubmission = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnViewSubmissions
         '
-        Me.btnViewSubmissions.BackColor = System.Drawing.Color.Wheat
-        Me.btnViewSubmissions.Location = New System.Drawing.Point(190, 186)
+        Me.btnViewSubmissions.BackColor = System.Drawing.Color.Turquoise
+        Me.btnViewSubmissions.Location = New System.Drawing.Point(190, 122)
         Me.btnViewSubmissions.Name = "btnViewSubmissions"
         Me.btnViewSubmissions.Size = New System.Drawing.Size(403, 75)
         Me.btnViewSubmissions.TabIndex = 0
@@ -42,7 +43,7 @@ Partial Class Form1
         'btnCreateSubmission
         '
         Me.btnCreateSubmission.BackColor = System.Drawing.Color.LightBlue
-        Me.btnCreateSubmission.Location = New System.Drawing.Point(190, 299)
+        Me.btnCreateSubmission.Location = New System.Drawing.Point(190, 315)
         Me.btnCreateSubmission.Name = "btnCreateSubmission"
         Me.btnCreateSubmission.Size = New System.Drawing.Size(403, 84)
         Me.btnCreateSubmission.TabIndex = 1
@@ -68,12 +69,23 @@ Partial Class Form1
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
         '
+        'btnSearchSubmission
+        '
+        Me.btnSearchSubmission.BackColor = System.Drawing.Color.Wheat
+        Me.btnSearchSubmission.Location = New System.Drawing.Point(190, 218)
+        Me.btnSearchSubmission.Name = "btnSearchSubmission"
+        Me.btnSearchSubmission.Size = New System.Drawing.Size(403, 75)
+        Me.btnSearchSubmission.TabIndex = 3
+        Me.btnSearchSubmission.Text = "SEARCH SUBMISSION (CTRL + S)"
+        Me.btnSearchSubmission.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.MistyRose
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnSearchSubmission)
         Me.Controls.Add(Me.Intro)
         Me.Controls.Add(Me.btnCreateSubmission)
         Me.Controls.Add(Me.btnViewSubmissions)
@@ -88,4 +100,5 @@ Partial Class Form1
     Friend WithEvents btnCreateSubmission As Button
     Friend WithEvents Intro As TextBox
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents btnSearchSubmission As Button
 End Class

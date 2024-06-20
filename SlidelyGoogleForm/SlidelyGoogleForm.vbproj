@@ -83,6 +83,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormSearchSubmission.Designer.vb">
+      <DependentUpon>FormSearchSubmission.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSearchSubmission.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormEditSubmission.Designer.vb">
       <DependentUpon>FormEditSubmission.vb</DependentUpon>
     </Compile>
@@ -121,6 +127,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearchSubmission.resx">
+      <DependentUpon>FormSearchSubmission.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCreateSubmission.resx">
       <DependentUpon>FormCreateSubmission.vb</DependentUpon>

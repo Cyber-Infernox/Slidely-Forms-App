@@ -9,6 +9,11 @@
         createForm.ShowDialog()
     End Sub
 
+    Private Sub btnSearchSubmission_Click(sender As Object, e As EventArgs) Handles btnSearchSubmission.Click
+        Dim SearchSubmission As New FormSearchSubmission()
+        SearchSubmission.ShowDialog()
+    End Sub
+
     Protected Overrides Function ProcessCmdKey(ByRef msg As Message, keyData As Keys) As Boolean
         Select Case keyData
             Case Keys.Control Or Keys.V
@@ -16,6 +21,9 @@
                 Return True
             Case Keys.Control Or Keys.N
                 btnCreateSubmission.PerformClick()
+                Return True
+            Case Keys.Control Or Keys.S
+                btnSearchSubmission.PerformClick()
                 Return True
         End Select
         Return MyBase.ProcessCmdKey(msg, keyData)
