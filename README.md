@@ -57,8 +57,8 @@ This repository contains the code for the Slidely Project, which includes both t
 
 ## Key Points
 
-1. *Adding or deleting any submission will affect the "db.json" file in your local system only and not in this github repository*
-2. *This project is built in "Visual Studio Community 2022" using "NodeJS version 20.9.0" and "Typescript version 5.4.5*
+1. *Adding or deleting any submission will affect the "db.json" file in your local system only and not in this github repository.*
+2. *This project is built in "Visual Studio Community 2022" using "NodeJS version 20.9.0" and "Typescript version 5.4.5".*
 
 ## License
 
