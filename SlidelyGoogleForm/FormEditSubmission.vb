@@ -1,13 +1,14 @@
 ﻿Imports Newtonsoft.Json
 Imports System.Net.Http
 Imports System.Text
-Imports System.Threading.Tasks
-Imports System.Windows.Forms
 
 Public Class FormEditSubmission
     Private submissions As List(Of Submission)
     Private currentIndex As Integer
     Private stopwatch As Stopwatch = New Stopwatch()
+
+    ' Define event to show the recently edited submission
+    Public Event SubmissionUpdated As EventHandler
 
     Public Sub New(index As Integer)
         InitializeComponent()
@@ -82,6 +83,9 @@ Public Class FormEditSubmission
                 Dim response As HttpResponseMessage = Await client.PutAsync($"http://localhost:3000/update?email={Uri.EscapeDataString(email)}", content)
                 response.EnsureSuccessStatusCode()
                 MessageBox.Show("Submission updated successfully!")
+
+                ' Raise the SubmissionUpdated event
+                RaiseEvent SubmissionUpdated(Me, EventArgs.Empty)
 
                 Me.Close()
             Catch ex As HttpRequestException

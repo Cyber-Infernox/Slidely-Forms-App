@@ -1,8 +1,6 @@
 ﻿Imports Newtonsoft.Json
 Imports System.Net.Http
 Imports System.Text
-Imports System.Threading.Tasks
-Imports System.Windows.Forms
 
 Public Class FormCreateSubmission
     Private stopwatch As Stopwatch = New Stopwatch()
@@ -21,7 +19,6 @@ Public Class FormCreateSubmission
     End Sub
 
     Private Async Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
-        ' Implement API call to submit form
         Dim name = txtName.Text
         Dim email = txtEmail.Text
         Dim phone = txtPhone.Text

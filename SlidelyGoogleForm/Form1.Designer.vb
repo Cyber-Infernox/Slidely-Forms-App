@@ -78,7 +78,7 @@ Partial Class Form1
         Me.Controls.Add(Me.btnCreateSubmission)
         Me.Controls.Add(Me.btnViewSubmissions)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Slidely Form"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

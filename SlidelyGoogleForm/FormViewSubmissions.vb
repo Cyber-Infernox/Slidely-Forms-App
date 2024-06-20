@@ -1,8 +1,5 @@
 ﻿Imports System.Net.Http
 Imports Newtonsoft.Json
-Imports System.Threading.Tasks
-Imports System.Windows.Forms
-Imports Microsoft.VisualBasic.Logging
 Imports System.Text
 
 Public Class FormViewSubmissions
@@ -10,7 +7,6 @@ Public Class FormViewSubmissions
     Private currentIndex As Integer
 
     Private Async Sub FormViewSubmissions_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' Fetch submissions from backend
         Await LoadSubmissionsAsync()
         DisplaySubmission(0)
     End Sub
@@ -99,7 +95,15 @@ Public Class FormViewSubmissions
 
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
         Dim editForm As New FormEditSubmission(currentIndex)
+        ' Subscribe to the SubmissionUpdated event
+        AddHandler editForm.SubmissionUpdated, AddressOf OnSubmissionUpdated
         editForm.ShowDialog()
+    End Sub
+
+    ' Event handler to refresh the current submission
+    Private Async Sub OnSubmissionUpdated(sender As Object, e As EventArgs)
+        Await LoadSubmissionsAsync()
+        DisplaySubmission(currentIndex)
     End Sub
 
     Protected Overrides Function ProcessCmdKey(ByRef msg As Message, keyData As Keys) As Boolean
