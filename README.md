@@ -1,9 +1,19 @@
 # Slidely-Forms-App Project
 A Windows forms desktop app using Visual Basic (.NET Framework)
 
-This repository contains the code for the Slidely Project, which includes both the backend and frontend components.
+This Windows Forms application allows users to manage submissions effectively. Users can create new submissions, view existing ones, edit details of a submission, delete submissions, and search for specific submissions based on criteria.
+
+## Features
+
+- **Create Submission:** Add a new submission with relevant details.
+- **View Submission:** See details of a specific submission.
+- **Edit Submission:** Modify the information of an existing submission.
+- **Delete Submission:** Remove a submission from the system.
+- **Search Submission:** Find submissions based on specific criteria (e.g., title, date, category).
 
 ## Project Structure
+
+This repository contains the code for the Slidely Project, which includes both the backend and frontend components.
 
 - `slidely-backend`: Contains the backend code.
 - `SlidelyGoogleForm`: Contains the frontend code.
